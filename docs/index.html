@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>kernel.css</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="description" content="A simple CSS framework">
+    <meta property="og:title" content="The kernel.css Framework">
+    <link rel="stylesheet" type="text/css" href="../css/kernel.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header class="ion-header ion-header-sm ion-bg-white">
+        <button class="ion-button nav-toggle">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div class="ion-container">
+            <nav class="ion-nav">
+                <ul>
+                    <li class="ion-nav-active-state">
+                        <a href="/kernel.css">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ionogy/kernel.css/releases">Download</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ionogy/kernel.css/blob/master/README.md">Docs</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ionogy/kernel.css">Github</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="ion-hero">
+        <div class="ion-container">
+            <h1 class="ion-hero-header">kernel.css</h1>
+            <p class="ion-hero-paragraph">The Ionogy Kernel CSS framework</p>
+        </div>
+    </div>
+
+    <main class="ion-container">
+        <div class="ion-grid">
+            <div class="ion-col-1">
+                <h2>Built for any kind of job</h2>
+                <p>Whether you're making a website, webapp, dashboard app, this framework got you covered!</p>
+            </div>
+            <div class="ion-col-1">
+                <h2>We are far from reaching its potential</h2>
+                <p>If you like this project and would like to help out, you may do so on <a href="https://github.com/Ionogy/kernel.css" class="ion-anchor">github</a>. This project is ever improving.</p>
+            </div>
+            <div class="ion-col-1">
+                <h2>Simple to use</h2>
+                <p>The Kernel Framework is designed for everyone from the beginner to the novience. It makes everybody's job easier.</p>
+            </div>
+        </div>
+
+        <div class="ion-grid">
+            <div class="ion-col-1">
+                <h2>Lightweight</h2>
+                <p>We aim to make this a super lightweight framework that wont slow down your website's loading times.</p>
+            </div>
+            <div class="ion-col-1">
+                <h2>A solid foundation for your project</h2>
+                <p>The Kernel Framework does not aim to do all the work for you by any means, it is meant to be a generic foundation that can be used for any type of project.</p>
+            </div>
+            <div class="ion-col-1">
+                <h2>Compatible with other frameworks</h2>
+                <p>Because ion uses prefixes for all its classes (<code class="ion-code">ion-</code>), it can be used with any other CSS framework. Mix and match :)</p>
+            </div>
+        </div>
+
+        <hr class="ion-hr">
+        <h2>Headings</h2>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Paragraph</p>
+
+        <pre class="ion-code code-block prettyprint">
+<code>&lt;p class="p"&gt;Hello, World!&lt;/p&gt;</code></pre>
+
+        <hr class="ion-hr">
+        <h2>Inputs</h2>
+
+        <button class="ion-button btn-default default-space">Default Button</button>
+        <button class="ion-button btn-primary default-space">Primary Button</button>
+        <button class="ion-button btn-risk default-space">Risk Button</button>
+        <button class="ion-button btn-minimal default-space">Minimal Button</button>
+
+        <pre class="ion-code code-block prettyprint">
+<code>&lt;button class="ion-button btn-default default-space"&gt;Default Button&lt;/button&gt;</code>
+</pre>
+
+        <br>
+        <textarea name="name" class="ion-textarea default-space" style="width: 100%;" placeholder="Type here..."></textarea>
+        <br>
+        <input type="text" name="name" value="" class="ion-input-text default-space" placeholder="Name">
+
+        <hr class="ion-hr">
+        <h2>Colors</h2>
+
+        <div class="ion-grid">
+            <div class="ion-col-1 ion-bg-red" style="border-radius: 5px;"></div>
+            <div class="ion-col-1 ion-bg-teal" style="border-radius: 5px;"></div>
+            <div class="ion-col-1 ion-bg-yellow" style="border-radius: 5px;"></div>
+            <div class="ion-col-1 ion-bg-blue" style="border-radius: 5px;"></div>
+            <div class="ion-col-1 ion-bg-pink" style="border-radius: 5px;"></div>
+            <div class="ion-col-1 ion-bg-indigo" style="border-radius: 5px;"></div>
+            <div class="ion-col-1 ion-bg-cyan" style="border-radius: 5px;"></div>
+        </div>
+
+        <pre class="ion-code code-block prettyprint">
+<code>&lt;div class="ion-bg-{color}"&gt;&lt;/div&gt;</code></pre>
+
+        <p>Kernel includes predefined color classes. These are great for prototyping your ideas quickly, but you may not want to pollute your dom with a bunch of color classes.</p>
+
+        <hr class="ion-hr">
+        <h2>Tables</h2>
+
+        <div class="ion-grid">
+            <div class="ion-col-1">
+                <h3>World Population</h3>
+                <table class="ion-table section" style="width: 100%;">
+                    <tr>
+                        <td>Year</td>
+                        <td>Population</td>
+                        <td>Change</td>
+                    </tr>
+                    <tr>
+                        <td>1990</td>
+                        <td>5,3 billion</td>
+                        <td>1.7%</td>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>6,1 billion</td>
+                        <td>1.3%</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>6,9 billion</td>
+                        <td>1.8%</td>
+                    </tr>
+                </table>
+                <p>
+                    <a href="http://www.geohive.com/earth/his_history3.aspx" class="ion-anchor">http://www.geohive.com/earth/his_history3.aspx</a>
+                </p>
+            </div>
+            <div class="ion-col-1">
+                <table class="ion-table section">
+                    <tr>
+                        <td>ID</td>
+                        <td>Operating system</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Windows</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mac</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Linux</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Free BSD</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Mike OS</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <pre class="ion-code code-block prettyprint">
+<code>&lt;div class="ion-table"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;ID&lt;/td&gt;
+        &lt;td&gt;Operating System&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Mac&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Linux&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/div&gt;
+</code></pre>
+
+        <hr class="ion-hr">
+        <h2>Cards</h2>
+
+        <div class="ion-grid">
+            <div class="ion-col-1">
+                <div class="ion-card ion-card-sm">
+                    <div class="ion-card-header">
+                        <h2>Desolate landscape</h2>
+                        <img src="https://source.unsplash.com/CF4c2GAker4/1600x900" alt="Desert landscape" style="height: 140px; object-fit: cover;">
+                    </div>
+
+                    <div class="ion-card-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ion-col-1">
+                <div class="ion-card ion-card-lg">
+                    <div class="ion-card-header">
+                        <h2>Bear family</h2>
+                        <img src="https://images.unsplash.com/photo-1452274381522-521513015433?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=476b9724fcf47b51c652d66e384f9ba0" alt="Family of bears" style="height: 140px; object-fit: cover;">
+                    </div>
+
+                    <div class="ion-card-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <hr>
+                        <h2>Comments:</h2> Great post, keep it up!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="ion-hr">
+        <h2>Code</h2>
+
+        <p>The java language was made in 1994 by James Gosling. Compared to other languages it runs in the jvm. Here is a little code snippet of the well known Hello World code sample:</p>
+        <code class="ion-code">System.out.println("Hello World");</code>
+        <br><br>
+        <p>And here is the full code sample:</p>
+        <pre class="ion-code code-block prettyprint">
+<code>public static void main(String[] args) {
+    System.out.println("Hello World");
+}</code></pre>
+
+        <hr class="ion-hr">
+        <h2>Progressbar</h2>
+
+        <div class="ion-progressbar" id="progress-ex1" style="margin: auto;">
+            <div class="ion-progress">
+
+            </div>
+        </div>
+
+        <pre class="ion-code code-block prettyprint">
+<code>&lt;div class="ion-progressbar" style="width: 75%"&gt;
+    &lt;div class="ion-progress"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <hr class="ion-hr">
+        <h2>Examples</h2>
+
+        <h3>Blog</h3>
+        <a href="#" class="ion-anchor">/examples/blog</a>
+
+    </main>
+
+    <footer class="ion-footer">
+        <div class="ion-footer-header">
+            &copy; Ionogy 2016
+        </div>
+
+        <br>
+
+        <div class="ion-container">
+            <nav class="ion-nav">
+                <ul>
+                    <li>
+                        <a href="/kernel.css">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ionogy/kernel.css/releases">Download</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ionogy/kernel.css/blob/master/README.md">Docs</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ionogy/kernel.css">Github</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../js/kernel.js"></script>
+    <script type="text/javascript">
+        /**
+         * Progressbar code
+         **/
+
+        $(document).ready(function() {
+            const progress1 = document.querySelector('#progress-ex1 .ion-progress');
+
+            let triggered = false;
+            let count = 0;
+
+            window.onscroll = () => {
+                if (((window.innerHeight + window.scrollY) >= document.body.scrollHeight) && !triggered) {
+                    triggered = true;
+
+                    (function progressLoop() {
+                        progress1.style.width = `${count}%`;
+
+                        if (count <= 100) {
+                            count += 0.5;
+                        }
+
+                        requestAnimationFrame(progressLoop);
+                    })();
+                }
+            };
+        });
+    </script>
+</body>
+
+</html>

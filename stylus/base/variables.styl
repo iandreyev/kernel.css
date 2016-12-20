@@ -1,0 +1,60 @@
+material-icons = {
+    "md-18": 18px,
+    "md-24": 24px,
+    "md-36": 36px,
+    "md-48": 48px
+};
+
+colors = {
+  "red":          #f44336,
+  "pink":         #e91e63,
+  "purple":       #9c27b0,
+  "deep-purple":  #673ab7,
+  "indigo":       #3f51b5,
+  "blue":         #2196f3,
+  "light-blue":   #03a9f4,
+  "cyan":         #00bcd4,
+  "teal":         #009688,
+  "green":        #4caf50,
+  "light-green":  #8bc34a,
+  "lime":         #cddc39,
+  "yellow":       #ffeb3b,
+  "amber":        #ffc107,
+  "orange":       #ff9800,
+  "deep-orange":  #ff5722,
+  "brown":        #795548,
+  "grey":         #9e9e9e,
+  "blue-grey":    #607d8b,
+
+  "black":        #000000,
+  "white":        #ffffff,
+  "transparent":  transparent
+};
+
+/*
+  Function for returning color.
+
+  Checks if $key exists in the $colors map,
+  if so it gets the color value from the map
+  and returns it.
+
+  @param $key a string specifying the color you want.
+  @return value of color in hex format.
+*/
+
+getcolor(key) {
+    if colors[key] {
+        return colors[key];
+    }
+}
+
+/*
+  Loops over the $colors int a map,
+  and creates a css class for each color.
+*/
+
+for key, value in colors {
+    .ion-bg-{key} {
+        background-color: value !important;
+    }
+}

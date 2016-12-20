@@ -1,0 +1,32 @@
+{
+    "name": "kernel.css",
+    "version": "0.1.0",
+    "description": "The CSS framework built for any kind of task",
+    "stylintrc": ".stylintrc",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "stylus stylus/theme.styl -o css/kernel.css --include-css",
+        "watch": "stylus -w stylus/theme.styl -o css/kernel.css --include-css",
+        "lint": "stylint stylus"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ionogy/ion-framework.git"
+    },
+    "keywords": [
+        "css",
+        "framework",
+        "simple"
+    ],
+    "author": "Jim Christian",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/Ionogy/ion-framework/issues"
+    },
+    "homepage": "https://github.com/Ionogy/ion-framework#readme",
+    "dependencies": {
+        "normalize.css": "^5.0.0",
+        "stylint": "^1.5.8",
+        "stylus": "^0.54.5"
+    }
+}

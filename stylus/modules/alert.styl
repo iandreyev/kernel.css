@@ -1,0 +1,25 @@
+.ion-alert {
+	animation: fadein 0.5s;
+	background-color: alert.bg;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+
+	strong {
+		color: #ffffff;
+		font-size: 1.1em;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
