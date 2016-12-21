@@ -1,4 +1,4 @@
-Welcome to the Ion framework!
+Welcome to the kernel.css framework!
 
 Table of contents
 -----------------
@@ -14,7 +14,7 @@ INTRODUCTION
 
 What is it?
 -----------
-The ion framework is a unintrusive, lightweight and semantic css and javascript framework
+The kernel.css framework is a unintrusive, lightweight and semantic css and javascript framework
 inspired by the material design spec. It uses prefixes for all it's classes. It is meant to be
 a foundation to your projects, and not a complete product.
 
@@ -37,15 +37,15 @@ That is why it was decided to release it as a standalone package.
 
 It is far from finished
 ------------------------
-The ion framework is an ever evolving project, and will
+The kernel.css framework is an ever evolving project, and will
 continue to be improved upon. We hope you will enjoy it :)
 
 INSTALLATION
 ============
 Simple. Just include these tags in your html.
 ```
-<link rel="stylesheet" type="text/css" href="css/ion-framework.css" />
-<script type="text/javascript" src="ion-framework.js" />
+<link rel="stylesheet" type="text/css" href="css/kernel.css" />
+<script type="text/javascript" src="kernel.js" />
 ```
 
 Code sample
@@ -96,12 +96,12 @@ Required software:
 
 Useful links
 ------------
- * Github page: http://github.com/ionogy/ion-framework
+ * Github page: http://github.com/ionogy/kernel.css
  * Bug reporter: http://...
 
 Documentation
 -------------
-As of now the documentation can be found at: http://github.com/ionogy/ion-framework/README.md
+As of now the documentation can be found at: http://github.com/ionogy/kernel.css/README.md
 It also comes bundled with this Framework.
 
 License
