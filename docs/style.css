@@ -1,24 +1,8 @@
 /* Website specific styles */
 
-body {
-    font-family: sans-serif;
-}
-
 main {
     margin-bottom: 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-}
-
-p {
-    line-height: 1.7em;
+    min-height: 100vh;
 }
 
 
@@ -26,28 +10,4 @@ p {
 
 pre {
     border: 0 !important;
-}
-
-body {
-    font-family: sans-serif;
-}
-
-main {
-    margin-bottom: 15px;
-}
-
-.ion-sidebar {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.ion-splitview-main {
-    background-color: #fafafa;
-}
-
-.ion-sidebar i {
-    color: #fafafa;
-}
-
-.default-space {
-    margin: 15px 0 15px 0;
 }
