@@ -93,6 +93,9 @@ How do i contribute code to the project?
 ----------------------------------------
 Required software:
  * git
+ * nodejs
+
+Please run the npm "lint" script before you commit changes.
 
 Useful links
 ------------
