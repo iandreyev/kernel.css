@@ -118,4 +118,4 @@ Jim Christian:
 
 CHANGELOG
 ---------
-Please read the file called CHANGELOG.txt
+Please read the file called CHANGELOG.md
