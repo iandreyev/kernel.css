@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Ionogy/ion-framework.git"
+        "url": "git+https://github.com/Ionogy/kernel.css.git"
     },
     "keywords": [
         "css",
@@ -21,9 +21,9 @@
     "author": "Jim Christian",
     "license": "GPL-3.0",
     "bugs": {
-        "url": "https://github.com/Ionogy/ion-framework/issues"
+        "url": "https://github.com/Ionogy/kernel.css/issues"
     },
-    "homepage": "https://github.com/Ionogy/ion-framework#readme",
+    "homepage": "https://github.com/Ionogy/kernel.css#readme",
     "dependencies": {
         "normalize.css": "^5.0.0",
         "stylint": "^1.5.8",
