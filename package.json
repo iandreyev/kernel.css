@@ -25,7 +25,6 @@
     },
     "homepage": "https://github.com/Ionogy/kernel.css#readme",
     "dependencies": {
-        "normalize.css": "^5.0.0",
         "stylint": "^1.5.8",
         "stylus": "^0.54.5"
     }
