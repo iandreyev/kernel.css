@@ -254,11 +254,11 @@
         <hr class="ion-hr">
         <h2>Progressbar</h2>
 
-        <div class="ion-progressbar" id="progress-ex1" style="margin: auto;">
-            <div class="ion-progress">
-
-            </div>
+        <div class="ion-progressbar" id="progress-ex1">
+            <div class="ion-progress"></div>
         </div>
+
+        <button class="ion-button ion-btn-default ion-section" id="btn-activate-progress" type="button" name="button">Activate Progressbar</button>
 
         <pre class="ion-code code-block prettyprint">
 <code>&lt;div class="ion-progressbar" style="width: 75%"&gt;
@@ -304,31 +304,30 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="dist/kernel.js"></script>
     <script type="text/javascript">
+        'use strict';
+
         /**
          * Progressbar code
          **/
 
-        $(document).ready(function() {
-            const progress1 = document.querySelector('#progress-ex1 .ion-progress');
+        const btnProgress = $('#btn-activate-progress');
+        const progress1 = $('#progress-ex1 .ion-progress');
 
-            let triggered = false;
-            let count = 0;
+        let triggered = false;
+        let count = 0;
 
-            window.onscroll = () => {
-                if (((window.innerHeight + window.scrollY) >= document.body.scrollHeight) && !triggered) {
-                    triggered = true;
+        btnProgress.click(function() {
+            triggered = true;
 
-                    (function progressLoop() {
-                        progress1.style.width = `${count}%`;
+            (function progressLoop() {
+                progress1.css('width', count + '%');
 
-                        if (count <= 100) {
-                            count += 0.5;
-                        }
-
-                        requestAnimationFrame(progressLoop);
-                    })();
+                if (count <= 100) {
+                    count += 0.5;
                 }
-            };
+
+                requestAnimationFrame(progressLoop);
+            })();
         });
     </script>
 </body>
