@@ -42,12 +42,12 @@
     }
 
     &.ion-btn-primary {
-        background-color: #00b0ff;
+        background-color: btn-primary.bg;
         border-radius: 3px;
         color: #fff;
 
       &:hover {
-          background-color: #0091ea;
+          background-color: darken(btn-primary.bg, 10%);
       }
 
       &:active {
@@ -56,12 +56,12 @@
     }
 
     &.ion-btn-safe {
-        background-color: #2ecc71;
+        background-color: btn-safe.bg;
         border-radius: 3px;
         color: #fff;
 
         &:hover {
-            background-color: #27ae60;
+            background-color: darken(btn-safe.bg, 10%);
         }
 
         &:active {
@@ -69,13 +69,27 @@
         }
     }
 
+    &.ion-btn-warning {
+        background-color: btn-warning.bg;
+        border-radius: 3px;
+        color: #fff;
+
+        &:hover {
+            background-color: darken(btn-warning.bg, 10%);
+        }
+
+        &:active {
+          transform: scale(0.95);
+        }
+    }
+
     &.ion-btn-risk {
-      background-color: #f44336;
+      background-color: btn-risk.bg;
       border-radius: 3px;
       color: #fff;
 
       &:hover {
-        background-color: #e53935;
+        background-color: darken(btn-risk.bg, 10%);
       }
 
       &:active {
