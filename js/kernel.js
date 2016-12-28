@@ -4,25 +4,50 @@
     github.com/ionogy/kernel.css
 */
 
-var essence = essence || {};
+(function() {
+    'use strict';
 
-essence.toggled = false;
+    var kernel = kernel || {};
 
-essence.toggleNav = function(e) {
-    const navList = document.querySelector('.ion-header .ion-nav');
+    kernel.toggled = false;
 
-    this.toggled = !this.toggled;
+    kernel.toggleNav = function(e) {
+        const navList = document.querySelector('.ion-header .ion-nav');
 
-    if (this.toggled) {
-        const navMobile = document.createElement('div');
-        navMobile.innerHTML = navList.innerHTML;
-        navMobile.className = 'ion-nav-mobile';
+        this.toggled = !this.toggled;
 
-        document.body.appendChild(navMobile);
-    } else {
-        document.querySelector('.ion-nav-mobile').remove();
-    }
-};
+        if (this.toggled) {
+            const navMobile = document.createElement('nav');
+            navMobile.innerHTML = navList.innerHTML;
+            navMobile.className = 'ion-nav-mobile';
+            navMobile.style['z-index'] = '1000';
 
-document.querySelector('.ion-header .nav-toggle').onclick =
-    essence.toggleNav;
+            document.body.appendChild(navMobile);
+        } else {
+            document.querySelector('.ion-nav-mobile').remove();
+        }
+    };
+
+    document.querySelector('.ion-header .nav-toggle').onclick =
+        kernel.toggleNav;
+
+    var sidebar, sidebarToggle;
+    var sidebarIsExpanded = false;
+
+    sidebar = document.querySelector('.ion-sidebar');
+    sidebarToggle = document.querySelector('.ion-sidebar ul li:first-child');
+
+    kernel.invokeSidebar = function() {
+        if (sidebarIsExpanded) {
+            sidebar.style.width = '60px';
+        } else {
+            sidebar.style.width = '220px';
+        }
+
+        sidebarIsExpanded = !sidebarIsExpanded;
+    };
+
+    sidebarToggle.onclick = function() {
+        kernel.invokeSidebar();
+    };
+})();
