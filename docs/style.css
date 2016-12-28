@@ -18,3 +18,7 @@ nav .github-icon {
     margin-right: 5px;
     vertical-align: middle;
 }
+
+.ion-hero .hero-btn {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+}
