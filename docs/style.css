@@ -11,3 +11,9 @@ main {
 pre {
     border: 0 !important;
 }
+
+nav .github-icon {
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
