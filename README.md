@@ -4,14 +4,13 @@ Welcome to the kernel.css framework!
 
 Table of contents
 -----------------
- 1. INTRODUCTION
- 2. INSTALLATION
- 3. CONTRIBUTE
- 4. CONTACT
- 5. CHANGELOG
+ * [Introduction](#introduction)
+ * [Installation](#installation)
+ * [Contribute](#contribute)
+ * [Contact](#contact)
+ * [Changelog](#changelog)
 
-
-INTRODUCTION
+### INTRODUCTION
 ============
 
 What is it?
@@ -42,7 +41,7 @@ It is far from finished
 The kernel.css framework is an ever evolving project, and will
 continue to be improved upon. We hope you will enjoy it :)
 
-INSTALLATION
+### INSTALLATION
 ============
 Simple. Just include these tags in your html.
 ```
@@ -73,7 +72,7 @@ Code sample
   </header>
 ```
 
-CONTRIBUTE
+### CONTRIBUTE
 ==========
 
 If you like the project and would like to contribute, you can
@@ -113,11 +112,11 @@ License
 -------
 Please read the file called LICENSE.txt
 
-CONTACT
+### CONTACT
 =======
 Jim Christian:
  - jimchristian@hotmail.no
 
-CHANGELOG
----------
+### CHANGELOG
+=========
 Please read the file called CHANGELOG.md
