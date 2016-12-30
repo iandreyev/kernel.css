@@ -1,10 +1,10 @@
 /*
-    kernel.css v0.1.0
+    kernel.css v0.1.1
     GPL License
     github.com/ionogy/kernel.css
 */
 
-(function() {
+window.onload = function() {
     'use strict';
 
     var kernel = kernel || {};
@@ -50,4 +50,4 @@
     sidebarToggle.onclick = function() {
         kernel.invokeSidebar();
     };
-})();
+};
