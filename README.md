@@ -80,29 +80,35 @@ Navigation code example
 
 Contribute
 ==========
-
 If you like the project and would like to contribute, you can
 do so at github.
 
+kernel.css uses [stylus](http://stylus-lang.com/) internally as it's CSS Preprocessor.
+
 Contributing code
 -----------------
+Required software:
+ * git
+ * nodejs
+
+The kernel.css webpage is located in the /docs directory, and the project
+examples are found in the /docs/examples directory.
+
+You can find the stylus css files in the /stylus directory.
+
+After you build your project with "npm run compile" or "npm run watch",
+the file can be found in the /build directory. Please use the index.html file
+in /test directory which uses the css file in /build, to see your changes.
+
+Please run the "npm run lint" script before you commit any changes.
 
 Contributing design
 -------------------
-If you're a designer
 
 Writing documentation
 ---------------------
 We always appreciate if you help out improving the documentation.
 I have probably made lots of typos :)
-
-How do i contribute code to the project?
-----------------------------------------
-Required software:
- * git
- * nodejs
-
-Please run the npm "lint" script before you commit changes.
 
 Useful links
 ------------
