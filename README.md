@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/kernel.css.svg)](https://badge.fury.io/js/kernel.css)
+[![npm version](https://badge.fury.io/js/kernel.css.svg)](https://www.npmjs.com/package/kernel.css)
 
 Welcome to the kernel.css framework!
 
