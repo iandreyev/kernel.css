@@ -10,7 +10,7 @@ Table of contents
  * [Contact](#contact)
  * [Changelog](#changelog)
 
-### INTRODUCTION
+Introduction
 ============
 
 What is it?
@@ -41,7 +41,7 @@ It is far from finished
 The kernel.css framework is an ever evolving project, and will
 continue to be improved upon. We hope you will enjoy it :)
 
-### INSTALLATION
+Installation
 ============
 Simple. Just include these tags in your html.
 ```
@@ -72,7 +72,7 @@ Code sample
   </header>
 ```
 
-### CONTRIBUTE
+Contribute
 ==========
 
 If you like the project and would like to contribute, you can
@@ -112,11 +112,11 @@ License
 -------
 Please read the file called LICENSE.txt
 
-### CONTACT
+Contact
 =======
 Jim Christian:
  - jimchristian@hotmail.no
 
-### CHANGELOG
+Changelog
 =========
 Please read the file called CHANGELOG.md
