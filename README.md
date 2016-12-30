@@ -43,17 +43,23 @@ continue to be improved upon. We hope you will enjoy it :)
 
 Installation
 ============
-Simple. Just include these tags in your html <head> after downloading.
+Simple. Just include these tags in your html after downloading.
 ```
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="kernel-v0.x.x/kernel.css" />
-<script type="text/javascript" src="kernel-v0.x.x/kernel.js" />
+<script type="text/javascript" src="kernel-v0.x.x/kernel.js"></script>
 ```
 
-Code sample
+Navigation code example
 -----------
 ```
   <header class="ion-header ion-header-sm ion-bg-white">
-    <div class="ion-header-brand">Ion</div>
+    <div class="ion-header-brand">kernel.css</div>
+
+    <button class="nav-toggle">
+        <i class="material-icons">menu</i>
+    </button>
+
     <div class="ion-container">
       <nav class="ion-nav">
         <ul>
