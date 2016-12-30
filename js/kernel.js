@@ -4,7 +4,7 @@
     github.com/ionogy/kernel.css
 */
 
-(function() {
+window.onload = function() {
     'use strict';
 
     var kernel = kernel || {};
@@ -50,4 +50,4 @@
     sidebarToggle.onclick = function() {
         kernel.invokeSidebar();
     };
-})();
+};
