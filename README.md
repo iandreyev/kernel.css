@@ -41,7 +41,7 @@ continue to be improved upon. We hope you will find it useful.
 
 Installation
 ============
-Simple. Just include these tags in your html after downloading.
+Simple. Just include these tags in your html.
 ```
 <link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.2.0/kernel.min.css" />
 <script type="text/javascript" src="https://ionogy.com/kernel.css/v0.2.0/kernel.js"></script>
