@@ -90,8 +90,6 @@ Required software:
  * git
  * nodejs
 
-Please do not directly edit the files in the /dist directory!
-
 The kernel.css webpage is located in the /docs directory, and the project
 examples are found in the /docs/examples directory.
 
