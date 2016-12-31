@@ -50,7 +50,7 @@ Simple. Just include these tags in your html.
 Navigation code example
 -----------
 ```
-<body class="ion-header">
+<body class="ion-base">
   <header class="ion-header ion-header-sm ion-bg-white">
     <div class="ion-header-brand">kernel.css</div>
 
