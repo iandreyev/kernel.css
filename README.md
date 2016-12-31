@@ -43,8 +43,8 @@ Installation
 ============
 Simple. Just include these tags in your html after downloading.
 ```
-<link rel="stylesheet" type="text/css" href="kernel-v0.x.x/kernel.css" />
-<script type="text/javascript" src="kernel-v0.x.x/kernel.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.2.0/kernel.min.css" />
+<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.2.0/kernel.js"></script>
 ```
 
 Navigation code example
