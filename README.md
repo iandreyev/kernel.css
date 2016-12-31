@@ -37,7 +37,7 @@ That is why it was decided to release it as a standalone project.
 It's far from finished
 ------------------------
 The kernel.css framework is an ever evolving project, and will
-continue to be improved upon. We hope you will enjoy it :)
+continue to be improved upon. We hope you will find it useful.
 
 Installation
 ============
