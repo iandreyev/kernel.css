@@ -1,22 +1,22 @@
 /*
-    kernel.css v0.1.1
+    kernel.css v0.2.0
     GPL License
     github.com/ionogy/kernel.css
 */
 
-window.onload = function() {
+var kernel = kernel || {};
+
+(function(app) {
     'use strict';
 
-    var kernel = kernel || {};
+    var navIsToggled = false;
 
-    kernel.toggled = false;
+    app.toggleNav = function(e) {
+        var navList = document.querySelector('.ion-header .ion-nav');
 
-    kernel.toggleNav = function(e) {
-        const navList = document.querySelector('.ion-header .ion-nav');
+        navIsToggled = !navIsToggled;
 
-        this.toggled = !this.toggled;
-
-        if (this.toggled) {
+        if (navIsToggled) {
             const navMobile = document.createElement('nav');
             navMobile.innerHTML = navList.innerHTML;
             navMobile.className = 'ion-nav-mobile';
@@ -28,26 +28,31 @@ window.onload = function() {
         }
     };
 
-    document.querySelector('.ion-header .nav-toggle').onclick =
-        kernel.toggleNav;
+    var sidebar = document.querySelector('.ion-sidebar');
+    var sidebarIsToggled = false;
 
-    var sidebar, sidebarToggle;
-    var sidebarIsExpanded = false;
-
-    sidebar = document.querySelector('.ion-sidebar');
-    sidebarToggle = document.querySelector('.ion-sidebar ul li:first-child');
-
-    kernel.invokeSidebar = function() {
-        if (sidebarIsExpanded) {
+    app.toggleSidebar = function() {
+        if (sidebarIsToggled) {
             sidebar.style.width = '60px';
         } else {
             sidebar.style.width = '220px';
         }
 
-        sidebarIsExpanded = !sidebarIsExpanded;
+        sidebarIsToggled = !sidebarIsToggled;
     };
 
-    sidebarToggle.onclick = function() {
-        kernel.invokeSidebar();
+    app.init = function() {
+        var navToggle = document.querySelector('.ion-header .nav-toggle');
+        var sidebarToggle = document.querySelector('.ion-sidebar ul li:first-child');
+
+        if (navToggle) {
+            navToggle.onclick = app.toggleNav;
+        }
+
+        if (sidebarToggle) {
+            sidebarToggle.onclick = app.toggleSidebar;
+        }
     };
-};
+})(kernel);
+
+window.onload = kernel.init;
