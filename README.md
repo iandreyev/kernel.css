@@ -16,7 +16,7 @@ Introduction
 What is it?
 -----------
 The kernel.css framework is a unintrusive, lightweight and semantic css and javascript framework
-inspired by the material design spec. It uses prefixes for all it's classes. It's meant to be
+inspired by the [material design spec](https://material.io/guidelines). It uses prefixes for all it's classes. It's meant to be
 a foundation to your projects, and not a complete product.
 
 Features
