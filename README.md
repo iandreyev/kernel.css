@@ -28,13 +28,11 @@ Features
 
 Why was it created?
 -------------------
-
-The framework was orginally created for the Ionogy Spicy project, which can be found here:
-https://ionogy.com/spicy
+kernel.css was orginally created for the Ionogy [Spicy](https://ionogy.com/spicy) project.
 We needed a framework that could be used for creating everything from websites to webapps, and the likes.
 It also had to be customizable in order to let users
 style their application how they wanted, but no other frameworks fit those requirements well enough.
-That is why it was decided to release it as a standalone package.
+That is why it was decided to release it as a standalone project.
 
 It's far from finished
 ------------------------
@@ -45,7 +43,6 @@ Installation
 ============
 Simple. Just include these tags in your html after downloading.
 ```
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="kernel-v0.x.x/kernel.css" />
 <script type="text/javascript" src="kernel-v0.x.x/kernel.js"></script>
 ```
@@ -53,6 +50,7 @@ Simple. Just include these tags in your html after downloading.
 Navigation code example
 -----------
 ```
+<body class="ion-header">
   <header class="ion-header ion-header-sm ion-bg-white">
     <div class="ion-header-brand">kernel.css</div>
 
@@ -76,6 +74,7 @@ Navigation code example
       </nav>
     </div>
   </header>
+</body>
 ```
 
 Contribute
@@ -91,14 +90,16 @@ Required software:
  * git
  * nodejs
 
+Please do not directly edit the files in the /dist directory!
+
 The kernel.css webpage is located in the /docs directory, and the project
 examples are found in the /docs/examples directory.
 
-You can find the stylus css files in the /stylus directory.
+You can find the stylus CSS files in the /stylus directory.
 
 After you build your project with "npm run compile" or "npm run watch",
-the file can be found in the /build directory. Please use the index.html file
-in /test directory which uses the css file in /build, to see your changes.
+the newly built kernel.css file can be found in the /build directory. Please use the index.html file
+in /test directory which uses the css file in /build, to test your changes.
 
 Please run the "npm run lint" script before you commit any changes.
 
