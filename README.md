@@ -15,7 +15,7 @@ Introduction
 
 What is it?
 -----------
-The kernel.css framework is a unintrusive, lightweight and semantic css and javascript framework
+The kernel.css framework is a unintrusive, lightweight and semantic CSS and JavaScript framework
 inspired by the [material design spec](https://material.io/guidelines). It uses prefixes for all it's classes. It's meant to be
 a foundation to your projects, and not a complete product.
 
@@ -28,7 +28,7 @@ Features
 
 Why was it created?
 -------------------
-kernel.css was orginally created for the Ionogy [Spicy](https://ionogy.com/spicy) project.
+kernel.css was originally created for the Ionogy [Spicy](https://ionogy.com/spicy) project.
 We needed a framework that could be used for creating everything from websites to webapps, and the likes.
 It also had to be customizable in order to let users
 style their application how they wanted, but no other frameworks fit those requirements well enough.
