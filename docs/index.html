@@ -73,9 +73,26 @@
             </div>
             <div class="ion-col-1">
                 <h2>Compatible with other frameworks</h2>
-                <p>Because ion uses prefixes for all its classes (<code class="ion-code">ion-</code>), it can be used with any other CSS framework. Mix and match :)</p>
+                <p>Because ion uses prefixes for all its classes (<code class="ion-code">ion-</code>), it can be used with any other CSS framework. Mix and match
+                    <svg style="height: 22px; vertical-align: middle; margin-left: 2px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+                        <circle cx="32" cy="32" r="30" fill="#ffdd67" />
+                        <g fill="#664e27">
+                            <circle cx="20.5" cy="26.6" r="5" />
+                            <circle cx="43.5" cy="26.6" r="5" />
+                            <path d="m44.6 40.3c-8.1 5.7-17.1 5.6-25.2 0-1-.7-1.8.5-1.2 1.6 2.5 4 7.4 7.7 13.8 7.7s11.3-3.6 13.8-7.7c.6-1.1-.2-2.3-1.2-1.6" />
+                        </g>
+                        </svg></p>
             </div>
         </div>
+
+        <hr class="ion-hr">
+        <h3>Base</h3>
+
+        <p>The <code class="ion-code">ion-base</code> class contains the styles for typography, the headings and paragraphs.</p>
+
+<pre class="ion-code code-block prettyprint"><code>&lt;body class="ion-base"&gt;
+...
+&lt;/body&gt;</code></pre>
 
         <hr class="ion-hr">
         <h2>Headings</h2>
@@ -103,7 +120,24 @@
         <button class="ion-button ion-btn-minimal">Minimal</button>
 
         <pre class="ion-code code-block prettyprint">
-<code>&lt;button class="ion-button btn-default"&gt;Default Button&lt;/button&gt;</code>
+<code>&lt;!-- Default Button --&gt;
+&lt;button class="ion-button btn-default"&gt;Button&lt;/button&gt;
+
+&lt;!-- Primary Button --&gt;
+&lt;button class="ion-button btn-primary"&gt;Button&lt;/button&gt;
+
+&lt;!-- Safe Button --&gt;
+&lt;button class="ion-button btn-safe"&gt;Button&lt;/button&gt;
+
+&lt;!-- Warning Button --&gt;
+&lt;button class="ion-button btn-warning"&gt;Button&lt;/button&gt;
+
+&lt;!-- Risk Button --&gt;
+&lt;button class="ion-button btn-risk"&gt;Button&lt;/button&gt;
+
+&lt;!-- Minimal Button --&gt;
+&lt;button class="ion-button btn-minimal"&gt;Button&lt;/button&gt;
+</code>
 You may also use the "ion-button" class with anchor tags and button inputs.
 </pre>
 
@@ -128,7 +162,7 @@ You may also use the "ion-button" class with anchor tags and button inputs.
         <pre class="ion-code code-block prettyprint">
 <code>&lt;div class="ion-bg-{color}"&gt;&lt;/div&gt;</code></pre>
 
-        <p>Kernel includes predefined color classes. These are great for prototyping your ideas quickly, but you may not want to pollute your dom with a bunch of color classes.</p>
+        <p>kernel.css includes predefined color classes. These are great for prototyping your ideas quickly, but you may not want to pollute your dom with a bunch of color classes.</p>
 
         <hr class="ion-hr">
         <h2>Tables</h2>
@@ -244,6 +278,18 @@ You may also use the "ion-button" class with anchor tags and button inputs.
                 </div>
             </div>
         </div>
+
+<pre class="ion-code code-block prettyprint">
+<code>&lt;div class="ion-card ion-card-sm"&gt;</code>
+    &lt;div class="ion-card-header"&gt;
+        &lt;h3>Deer&lt;/h3&gt;
+        &lt;img src="https://source.unsplash.com/nuRYwOJryyk/800x600" alt="Deer"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="ion-card-content"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
 
         <hr class="ion-hr">
         <h2>Code</h2>
