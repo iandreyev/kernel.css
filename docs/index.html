@@ -6,7 +6,7 @@
     <meta name="description" content="The CSS framework built for any kind of task">
     <meta name="theme-color" content="#2979ff">
     <meta property="og:title" content="The kernel.css Framework">
-    <link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.2.0/kernel.min.css" />
+    <link rel="stylesheet" type="text/css" href="../build/kernel.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -40,8 +40,8 @@
 
     <div class="ion-hero">
         <div class="ion-container">
-            <h1 class="ion-hero-header">kernel.css</h1>
-            <p class="ion-hero-paragraph">simplicity done right</p>
+            <h3>kernel.css</h3>
+            <p>simplicity done right</p>
             <a class="ion-button ion-btn-x2 hero-btn" draggable="false" href="https://github.com/Ionogy/kernel.css/releases"><i class="material-icons" style="vertical-align: middle; font-size: 24px; padding-right: 10px; color: rgba(0, 0, 0, 0.54);">&#xE2C4;</i>Download</a>
         </div>
     </div>
@@ -97,13 +97,21 @@
         <hr class="ion-hr">
         <h2>Headings</h2>
 
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p>Paragraph</p>
+        <h1>Heading 1 <div class="heading-font-label"><code>2.6179em / 39px</code></div></h1>
+        <h2>Heading 2 <div class="heading-font-label"><code>2.0681em / 31px</code></div></h2>
+        <h3>Heading 3 <div class="heading-font-label"><code>1.618em / 25px</code></div></h3>
+        <h4>Heading 4 <div class="heading-font-label"><code>1.272em / 24px</code></div></h4>
+        <h5>Heading 5 <div class="heading-font-label"><code>1em / 20px</code></div></h5>
+        <h6>Heading 6 <div class="heading-font-label"><code>0.7862em / 16px</code></div></h6>
+
+        <p style="display: inline;">Paragraph
+            <div class="heading-font-label"><code>1.0rem / 16px</code></div>
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
         <pre class="ion-code code-block prettyprint">
 <code>&lt;p class="p"&gt;Hello, World!&lt;/p&gt;</code></pre>
@@ -145,6 +153,13 @@ You may also use the "ion-button" class with anchor tags and button inputs.
 
         <textarea class="ion-input-text" name="name" placeholder="Type here..."></textarea>
         <input class="ion-input-text" type="text" name="name" value="" placeholder="Name">
+
+        <select class="ion-select">
+            <option value="" disabled selected>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Female">Other</option>
+        </select>
 
         <hr class="ion-hr">
         <h2>Colors</h2>

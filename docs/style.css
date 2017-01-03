@@ -23,6 +23,14 @@ nav .github-icon {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
+.heading-font-label {
+    background-color: #eee;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+}
+
 .block-margin {
     margin-bottom: 68px;
 }
