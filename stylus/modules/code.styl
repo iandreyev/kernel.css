@@ -4,13 +4,15 @@
 	color: code.color;
 	display: inline-block;
 	font-family: monospace;
-	font-size: 1.3em;
-	line-height: 1.5em;
+	font-size: 1.2em;
+	line-height: base.line-height;
 
-	&.code-block {
+	&.ion-code-block {
 		background-color: code.block-bg;
 		box-sizing: border-box;
 		color: code.block-color;
+		overflow-x: auto;
+		font-size: 1.3em;
 		padding: 15px;
 		white-space: pre-wrap;
 		width: 100%;

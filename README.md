@@ -43,15 +43,15 @@ Installation
 ============
 Simple. Just include these tags in your html.
 ```
-<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.2.0/kernel.min.css" />
-<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.2.0/kernel.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.3.0/kernel.min.css" />
+<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.3.0/kernel.js"></script>
 ```
 
 Navigation code example
 -----------
 ```
 <body class="ion-base">
-  <header class="ion-header ion-header-sm ion-bg-white">
+  <header class="ion-header ion-header-sm">
     <div class="ion-header-brand">kernel.css</div>
 
     <button class="nav-toggle">
@@ -112,7 +112,9 @@ I have probably made lots of typos :)
 Useful links
 ------------
  * Github page: http://github.com/ionogy/kernel.css
- * Bug reporter: http://...
+ * Issue tracker: https://github.com/ionogy/kernel.css/issues
+
+Please don't hesitate to report any issues you may find.
 
 Documentation
 -------------
