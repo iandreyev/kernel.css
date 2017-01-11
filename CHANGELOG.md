@@ -3,7 +3,7 @@
 ## 0.3.0 (11-01-2016)
 - Changed typography.
   [Awesome Typography](https://vaporwave98.github.io/awesome-typography)
-- Changed to a 16 column grid.
+- Switched to a 16 column grid.
 - Redo table styles.
 - Add headings and paragraph support in hero (ion-hero-header and ion-hero-paragraph are
   now removed).
