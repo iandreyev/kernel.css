@@ -1,13 +1,19 @@
 .ion-grid {
 	display: flex;
 
-	for num in (1...11) {
+	for num in (1...17) {
 		.ion-col-{num} {
 			flex: num;
-			margin: $main-padding;
-			padding: $main-padding 0 $main-padding 0;
 		}
 	}
+}
+
+[class*='ion-col-'] {
+  margin-right: $main-padding * 2;
+}
+
+[class*='ion-col-']:last-of-type {
+  margin-right: 0;
 }
 
 .ion-container {
@@ -29,9 +35,7 @@
 		width: 100%;
 	}
 
-	for num in (1...11) {
-		.ion-grid .ion-col-{num} {
-			margin: $main-padding 0;
-		}
+	[class*='ion-col-'] {
+	  margin-right: 0;
 	}
 }
