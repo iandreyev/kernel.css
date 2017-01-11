@@ -112,7 +112,9 @@ I have probably made lots of typos :)
 Useful links
 ------------
  * Github page: http://github.com/ionogy/kernel.css
- * Bug reporter: http://...
+ * Issue tracker: https://github.com/ionogy/kernel.css/issues
+
+Please don't hesitate to report any issues you may find.
 
 Documentation
 -------------
