@@ -6,6 +6,7 @@ main {
     min-height: 100vh;
 }
 
+
 /* Remove border added by code-prettify */
 
 pre {
@@ -60,7 +61,7 @@ nav .github-icon {
 }
 
 .grid-example .grid-example-item[class*='ion-col-']:last-of-type {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .grid-example p {
@@ -68,16 +69,16 @@ nav .github-icon {
     text-align: center;
 }
 
+
 /* For small screen sizes */
+
 @media (max-width: 800px) {
     .block-margin {
         margin-bottom: 0;
     }
-
     .grid-example {
         margin: 15px 0;
     }
-
     .grid-example .grid-example-item {
         margin: 10px 0;
     }
