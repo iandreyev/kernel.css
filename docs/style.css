@@ -42,6 +42,13 @@ nav .github-icon {
     margin-bottom: 73px;
 }
 
+.color {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
 .grid-example {
     margin: 15px 0;
 }
