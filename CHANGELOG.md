@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.0 (11-01-2016)
+## 0.3.0 (11-01-2017)
 - Changed typography.
   [Awesome Typography](https://vaporwave98.github.io/awesome-typography)
 - Switched to a 16 column grid.
