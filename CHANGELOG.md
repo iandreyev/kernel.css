@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.2 (06-02-2017)
+- Add support for multiple navigations.
+- Bug fixes.
+
 ## 0.3.1 (26-01-2016)
 - Change to the MIT license.
 

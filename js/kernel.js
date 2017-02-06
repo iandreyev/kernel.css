@@ -1,5 +1,5 @@
 /*
-    kernel.css v0.3.1
+    kernel.css v0.3.2
     MIT License
     github.com/ionogy/kernel.css
 */
