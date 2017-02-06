@@ -11,6 +11,10 @@ var kernel = kernel || {};
 
     var navIsToggled = false;
 
+    /**
+    * Toogle header navigation.
+    **/
+
     app.toggleNav = function(e) {
         var navList = document.querySelector('.ion-header .ion-nav');
 
@@ -31,6 +35,10 @@ var kernel = kernel || {};
     var sidebar = document.querySelector('.ion-sidebar');
     var sidebarIsToggled = false;
 
+    /**
+    * Toggle the sidebar.
+    **/
+
     app.toggleSidebar = function() {
         if (sidebarIsToggled) {
             sidebar.style.width = '60px';
@@ -40,6 +48,10 @@ var kernel = kernel || {};
 
         sidebarIsToggled = !sidebarIsToggled;
     };
+
+    /**
+    * Initializes dom elements.
+    **/
 
     app.init = function() {
         var navToggle = document.querySelector('.ion-header .nav-toggle');
