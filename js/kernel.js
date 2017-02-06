@@ -17,7 +17,7 @@ var kernel = kernel || {};
         navIsToggled = !navIsToggled;
 
         if (navIsToggled) {
-            const navMobile = document.createElement('nav');
+            var navMobile = document.createElement('nav');
             navMobile.innerHTML = navList.innerHTML;
             navMobile.className = 'ion-nav-mobile';
             navMobile.style['z-index'] = '1000';
