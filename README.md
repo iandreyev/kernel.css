@@ -43,8 +43,8 @@ Installation
 ============
 Simple. Just include these tags in your html.
 ```
-<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.3.1/kernel.min.css" />
-<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.3.1/kernel.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.3.2/kernel.min.css" />
+<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.3.2/kernel.js"></script>
 ```
 
 Navigation code example
