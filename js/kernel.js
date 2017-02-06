@@ -16,7 +16,7 @@ var kernel = kernel || {};
     **/
 
     app.toggleNav = function(e) {
-        var navList = document.querySelector('.ion-header .ion-nav');
+        var navList = e.currentTarget.parentNode.querySelector('.ion-nav');
 
         navIsToggled = !navIsToggled;
 
@@ -54,11 +54,13 @@ var kernel = kernel || {};
     **/
 
     app.init = function() {
-        var navToggle = document.querySelector('.ion-header .nav-toggle');
+        var navToggle = document.querySelectorAll('.ion-header .nav-toggle');
         var sidebarToggle = document.querySelector('.ion-sidebar ul li:first-child');
 
         if (navToggle) {
-            navToggle.onclick = app.toggleNav;
+            navToggle.forEach(function(element) {
+                element.onclick = app.toggleNav;
+            });
         }
 
         if (sidebarToggle) {
