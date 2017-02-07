@@ -89,6 +89,7 @@ Contributing code
 Required software:
  * git
  * nodejs
+ * npm (bundled with nodejs)
 
 The kernel.css webpage is located in the /docs directory, and the project
 examples are found in the /docs/examples directory.
