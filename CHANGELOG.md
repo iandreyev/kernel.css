@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 (08-03-2017)
+- Replace the alert module with a notice module.
+- Add ion-visible-sm util class.
+
 ## 0.3.1 (26-01-2016)
 - Change to the MIT license.
 
