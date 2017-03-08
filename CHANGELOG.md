@@ -4,7 +4,7 @@
 - Add support for multiple navigations.
 - Bug fixes.
 
-## 0.3.1 (26-01-2016)
+## 0.3.1 (26-01-2017)
 - Change to the MIT license.
 
 ## 0.3.0 (11-01-2017)
