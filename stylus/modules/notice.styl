@@ -1,0 +1,39 @@
+.ion-notice {
+    animation: fadein 0.5s;
+    background: notice.bg;
+    border-radius: 3px;
+	box-sizing: border-box;
+    color: notice.color;
+    line-height: 40px;
+	min-height: 40px;
+	padding: 0 15px;
+	width: 100%;
+	z-index: 999;
+
+    &.ion-info {
+        background: notice.info-bg;
+    }
+
+    &.ion-alert {
+        background: notice.alert-bg;
+    }
+
+    &.ion-warning {
+        background: notice.warning-bg;
+    }
+
+    .material-icons {
+        cursor: pointer;
+        float: right;
+        line-height: 40px;
+    }
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

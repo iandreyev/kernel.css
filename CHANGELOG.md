@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 (08-03-2017)
+- Replace the alert module with a notice module.
+- Add ion-visible-sm util class.
+
 ## 0.3.2 (06-02-2017)
 - Add support for multiple navigations.
 - Bug fixes.

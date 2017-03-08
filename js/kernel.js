@@ -9,6 +9,11 @@ var kernel = kernel || {};
 (function(app) {
     'use strict';
 
+    app.closeNotice = function(e) {
+        var parent = e.currentTarget.parentNode;
+        parent.remove();
+    }
+
     var navIsToggled = false;
 
     /**
@@ -56,6 +61,7 @@ var kernel = kernel || {};
     app.init = function() {
         var navToggle = document.querySelectorAll('.ion-header .nav-toggle');
         var sidebarToggle = document.querySelector('.ion-sidebar ul li:first-child');
+        var notice = document.querySelectorAll('.ion-notice .material-icons');
 
         if (navToggle) {
             navToggle.forEach(function(element) {
@@ -65,6 +71,12 @@ var kernel = kernel || {};
 
         if (sidebarToggle) {
             sidebarToggle.onclick = app.toggleSidebar;
+        }
+
+        if (notice) {
+            notice.forEach(function(element) {
+                element.onclick = app.closeNotice;
+            });
         }
     };
 })(kernel);

@@ -26,6 +26,10 @@
 	padding-right: $main-padding;
 }
 
+.ion-visible-sm {
+	display: none;
+}
+
 /* For small screen sizes */
 @media (max-width: container.width-sm) {
 	.ion-grid {
@@ -38,5 +42,9 @@
 
 	[class*='ion-col-'] {
 	  margin-right: 0;
+	}
+
+	.ion-visible-sm {
+		display: block;
 	}
 }

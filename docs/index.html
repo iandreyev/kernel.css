@@ -13,6 +13,8 @@
 </head>
 
 <body class="ion-base">
+    <div class="ion-notice ion-info"><strong>Notice: </strong> kernel.css is still early in it's development, as such some features may not work as expected.<i class="material-icons">close</i></div>
+
     <header class="ion-header ion-header-sm">
         <button class="nav-toggle">
             <i class="material-icons">menu</i>
@@ -97,12 +99,12 @@
         <hr class="ion-hr">
         <h2>Headings</h2>
 
-        <h1>Heading 1 <div class="heading-font-label"><code>2.6179em / 39px</code></div></h1>
-        <h2>Heading 2 <div class="heading-font-label"><code>2.0681em / 31px</code></div></h2>
+        <h1>Heading 1 <div class="heading-font-label"><code>2.6179em / 41px</code></div></h1>
+        <h2>Heading 2 <div class="heading-font-label"><code>2.0681em / 33px</code></div></h2>
         <h3>Heading 3 <div class="heading-font-label"><code>1.618em / 25px</code></div></h3>
-        <h4>Heading 4 <div class="heading-font-label"><code>1.272em / 24px</code></div></h4>
-        <h5>Heading 5 <div class="heading-font-label"><code>1em / 20px</code></div></h5>
-        <h6>Heading 6 <div class="heading-font-label"><code>0.7862em / 16px</code></div></h6>
+        <h4>Heading 4 <div class="heading-font-label"><code>1.272em / 20px</code></div></h4>
+        <h5>Heading 5 <div class="heading-font-label"><code>1em / 16px</code></div></h5>
+        <h6>Heading 6 <div class="heading-font-label"><code>0.7862em / 12px</code></div></h6>
 
         <p style="display: inline;">Paragraph
             <div class="heading-font-label"><code>1.0rem / 16px</code></div>
@@ -200,12 +202,26 @@ Example
         <hr class="ion-hr">
         <h2>Inputs</h2>
 
-        <button class="ion-button ion-btn-default ion-section">Default</button>
-        <button class="ion-button ion-btn-primary ion-section">Primary</button>
-        <button class="ion-button ion-btn-safe ion-section">Safe</button>
-        <button class="ion-button ion-btn-warning ion-section">Warning</button>
-        <button class="ion-button ion-btn-risk ion-section">Risk</button>
-        <button class="ion-button ion-btn-minimal ion-section">Minimal</button>
+        <div class="ion-grid">
+            <div class="ion-col-1">
+                <button class="ion-button ion-btn-default ion-section">Default</button>
+            </div>
+            <div class="ion-col-1">
+                <button class="ion-button ion-btn-primary ion-section">Primary</button>
+            </div>
+            <div class="ion-col-1">
+                <button class="ion-button ion-btn-safe ion-section">Safe</button>
+            </div>
+            <div class="ion-col-1">
+                <button class="ion-button ion-btn-warning ion-section">Warning</button>
+            </div>
+            <div class="ion-col-1">
+                <button class="ion-button ion-btn-risk ion-section">Risk</button>
+            </div>
+            <div class="ion-col-1">
+                <button class="ion-button ion-btn-minimal ion-section">Minimal</button>
+            </div>
+        </div>
 
         <pre class="ion-code ion-code-block prettyprint">
 <code>&lt;!-- Default Button --&gt;
@@ -242,6 +258,22 @@ and you can extend the class if you want to customize your own buttons.
             <option value="Female">Female</option>
             <option value="Female">Other</option>
         </select>
+
+        <hr class="ion-hr">
+        <h2>Notices</h2>
+
+        <p>Use notices to inform your users of something important. There are multiple types of notices; ion-info, ion-warning and ion-alert.</p>
+
+        <pre class="ion-code ion-code-block prettyprint">
+<code>&lt;div class="ion-notice ion-info"&gt;This is a notice.&lt;/div&gt;
+&lt;div class="ion-notice ion-warning"&gt;This is a warning.&lt;/div&gt;
+&lt;div class="ion-notice ion-info"&gt;This is an alert!&lt;/div&gt;</code></pre>
+
+        <div class="ion-notice ion-info ion-section"><strong>Notice: </strong> This is a notice.<i class="material-icons">close</i></div>
+
+        <div class="ion-notice ion-warning ion-section"><strong>Warning: </strong> This is a warning.<i class="material-icons">close</i></div>
+
+        <div class="ion-notice ion-alert ion-section"><strong>Alert: </strong> This is an alert!<i class="material-icons">close</i></div>
 
         <hr class="ion-hr">
         <h2>Colors</h2>
@@ -290,7 +322,13 @@ Center an element horizontally.
 
 &lt;!-- Circle --&gt;
 Make an element circular.
-&lt;div class="ion-circle"&gt;&lt;/div&gt;</code></pre>
+&lt;div class="ion-circle"&gt;&lt;/div&gt;
+
+&lt;!-- Horizontal Rule (hr) -->
+&lt;hr class="ion-hr"&gt;
+
+&lt;!-- Display only on small screen sizes -->
+&lt;div class="ion-visible-sm"&gt;...&lt;/div&gt;</code></pre>
 
         <hr class="ion-hr">
         <h2>Tables</h2>
