@@ -32,4 +32,4 @@
 - Fix bug where kernel.js would not wait for dom to load.
 
 ## 0.1.0 (29-12-2016)
-- Inital release.
+- Initial release.
