@@ -102,6 +102,8 @@ in /test directory which uses the css file in /build, to test your changes.
 
 Please run the "npm run lint" script before you commit any changes.
 
+You can run "npm run release" to create a release directory.
+
 Contributing design
 -------------------
 
