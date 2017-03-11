@@ -20,7 +20,7 @@
   now removed).
 - Rename ion-btn-x2 to ion-btn-lg
 - Add new components (ion-select).
-- Alert is no longer fixed by default.
+- Alerts are no longer fixed by default.
 
 ## 0.2.0 (31-12-2016)
 - Added support for new fonts.
