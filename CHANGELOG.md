@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1 (12-03-2017)
+- Fix button display issues.
+- Fix default alert text being hard to read.
+
 ## 0.4.0 (08-03-2017)
 - Replace the alert module with a notice module.
 - Add ion-visible-sm util class.
