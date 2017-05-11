@@ -90,3 +90,16 @@ nav .github-icon {
         margin: 10px 0;
     }
 }
+
+.ion-code-block .str { color: #27ae60; }
+.ion-code-block .kwd { color: #2980b9; }
+.ion-code-block .com { color: #c0392b; }
+.ion-code-block .typ { color: #8e44ad; }
+.ion-code-block .lit { color: #066; }
+.ion-code-block .pun, .ion-code-block .opn, .ion-code-block .clo { color: #660; }
+.ion-code-block .tag { color: #2980b9; }
+.ion-code-block .atn { color: #606; }
+.ion-code-block .atv { color: #080; }
+.ion-code-block .dec, .ion-code-block .var { color: #606; }
+.ion-code-block .fun { color: #800; }
+.ion-code-block .pln { color: #2c3e50; }
