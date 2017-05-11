@@ -529,6 +529,18 @@ Code block
                 requestAnimationFrame(progressLoop);
             })();
         });
+
+        /**
+        * Change header on scroll.
+        **/
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > $('.hero').height()) {
+                $('header').addClass('header-hover');
+            } else {
+                $('header').removeClass('header-hover');
+            }
+        });
     </script>
 </body>
 
