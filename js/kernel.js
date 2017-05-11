@@ -9,10 +9,20 @@ var kernel = kernel || {};
 (function(app) {
     'use strict';
 
+    app.getElementIndex = function(element) {
+        var index = 0;
+
+        while ((element = element.previousElementSibling)) {
+            index++;
+        }
+
+        return index;
+    };
+
     app.closeNotice = function(e) {
         var parent = e.currentTarget.parentNode;
         parent.remove();
-    }
+    };
 
     var navIsToggled = false;
 
@@ -54,14 +64,44 @@ var kernel = kernel || {};
         sidebarIsToggled = !sidebarIsToggled;
     };
 
+    app.tabs = function(tab) {
+        app.initTabs(document.querySelectorAll(tab));
+    };
+
+    app.initTabs = function(tabs) {
+        tabs.forEach(function(tab) {
+            var tabNavigation = tab.querySelectorAll('ul:first-child li');
+            var tabContent = tab.querySelectorAll('.ion-tab');
+
+            tabNavigation.forEach(function(element) {
+                element.onclick = function(event) {
+                    tabContent.forEach(function(el) {
+                        el.classList.remove('ion-tab-selected');
+                    });
+
+                    tabContent[app.getElementIndex(event.currentTarget)].classList.add('ion-tab-selected');
+
+                    tabContent.forEach(function(el) {
+                        if (el.classList.contains('ion-tab-selected')) {
+                            el.style.display = 'block';
+                        } else {
+                            el.style.display = 'none';
+                        }
+                    });
+                };
+            });
+        });
+    };
+
     /**
     * Initializes dom elements.
     **/
 
-    app.init = function() {
+    app.initEvents = function() {
         var navToggle = document.querySelectorAll('.ion-header .nav-toggle');
         var sidebarToggle = document.querySelector('.ion-sidebar ul li:first-child');
         var notice = document.querySelectorAll('.ion-notice .material-icons');
+        var tabs = document.querySelectorAll('.ion-tabs');
 
         if (navToggle) {
             navToggle.forEach(function(element) {
@@ -78,6 +118,14 @@ var kernel = kernel || {};
                 element.onclick = app.closeNotice;
             });
         }
+
+        if (tabs) {
+            app.initTabs(tabs);
+        }
+    };
+
+    app.init = function() {
+        app.initEvents();
     };
 })(kernel);
 
