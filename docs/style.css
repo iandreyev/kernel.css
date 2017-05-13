@@ -30,7 +30,13 @@ nav .github-icon {
 }
 
 .hero {
-    height: 500px;
+    height: 600px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.hero h3 {
+    font-weight: 300;
 }
 
 .hero .hero-btn {
@@ -46,8 +52,8 @@ nav .github-icon {
     padding: 5px;
 }
 
-.block-margin {
-    margin-bottom: 73px;
+.block-spacing {
+    height: 50px;
 }
 
 .color {
@@ -80,7 +86,7 @@ nav .github-icon {
 /* For small screen sizes */
 
 @media (max-width: 800px) {
-    .block-margin {
+    .block-spacing {
         margin-bottom: 0;
     }
     .grid-example {
