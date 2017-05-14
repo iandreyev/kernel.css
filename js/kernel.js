@@ -133,7 +133,7 @@ var kernel = kernel || {};
     }
 
     ProgressBar.prototype.setProgress = function(progress) {
-        this.el.querySelector('.ion-progress').style.width = progress + '%'
+        this.el.querySelector('.ion-progress').style.width = progress + '%';
     };
 
     app.ProgressBar = ProgressBar;
