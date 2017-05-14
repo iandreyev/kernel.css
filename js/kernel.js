@@ -127,6 +127,16 @@ var kernel = kernel || {};
     app.init = function() {
         app.initEvents();
     };
+
+    function ProgressBar(el) {
+        this.el = document.querySelector(el);
+    }
+
+    ProgressBar.prototype.setProgress = function(progress) {
+        this.el.querySelector('.ion-progress').style.width = progress + '%'
+    };
+
+    app.ProgressBar = ProgressBar;
 })(kernel);
 
 window.onload = kernel.init;
