@@ -9,7 +9,7 @@ var kernel = kernel || {};
 (function(app) {
     'use strict';
 
-    app.getElementIndex = function(element) {
+    var getElementIndex = function(element) {
         var index = 0;
 
         while ((element = element.previousElementSibling)) {
@@ -79,7 +79,7 @@ var kernel = kernel || {};
                         el.classList.remove('ion-tab-selected');
                     });
 
-                    tabContent[app.getElementIndex(event.currentTarget)].classList.add('ion-tab-selected');
+                    tabContent[getElementIndex(event.currentTarget)].classList.add('ion-tab-selected');
 
                     tabContent.forEach(function(el) {
                         if (el.classList.contains('ion-tab-selected')) {
