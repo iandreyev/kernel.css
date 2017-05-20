@@ -128,6 +128,10 @@ var kernel = kernel || {};
         app.initEvents();
     };
 
+    /**
+     * Progressbar.
+     **/
+
     function ProgressBar(el) {
         this.el = document.querySelector(el);
     }
