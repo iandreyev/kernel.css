@@ -43,8 +43,8 @@ Installation
 ============
 Simple. Just include these tags in your html.
 ```
-<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.4.0/kernel.min.css" />
-<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.4.0/kernel.js"></script>
+<link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.4.1/kernel.min.css" />
+<script type="text/javascript" src="https://ionogy.com/kernel.css/v0.4.1/kernel.js"></script>
 ```
 
 Navigation code example
@@ -101,6 +101,8 @@ the newly built kernel.css file can be found in the /build directory. Please use
 in /test directory which uses the css file in /build, to test your changes.
 
 Please run the "npm run lint" script before you commit any changes.
+
+You can run "npm run release" to create a release directory.
 
 Contributing design
 -------------------
