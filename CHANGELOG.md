@@ -1,10 +1,14 @@
 # Changelog
 
-## 0.5.0 (unreleased)
-- Add labels and tags.
+## 0.5.0 (20-05-2017)
+- Add labels, tags and tabs.
+- Redo typography to make them more generic (the old ones are in the .ion-modern class).
+- Add .ion-modern class, which have more modern looking font.
 - Add new utils (ion-fixed-top, ion-fixed-bottom, .ion-visible-lg ...)
-- Extend ion-base to work with more tags.
-- Replace ion-input-text with ion-input.
+- Extend ion-base to work with more html tags.
+- Add material-icons sizing classes.
+- Add progressbar object.
+- Add support for rtl (right-to-left) languages.
 
 ## 0.4.1 (12-03-2017)
 - Fix button display issues.
