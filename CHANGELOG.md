@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 (unreleased)
+- Add labels and tags.
+- Add new utils (ion-fixed-top, ion-fixed-bottom, .ion-visible-lg ...)
+- Extend ion-base to work with more tags.
+- Replace ion-input-text with ion-input.
+
 ## 0.4.1 (12-03-2017)
 - Fix button display issues.
 - Fix default notice text being hard to read.
