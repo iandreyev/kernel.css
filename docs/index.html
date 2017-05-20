@@ -6,7 +6,7 @@
     <meta name="description" content="The CSS framework built for any kind of task">
     <meta name="theme-color" content="#2979ff">
     <meta property="og:title" content="The kernel.css Framework">
-    <link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.4.1/kernel.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://ionogy.com/kernel.css/v0.5.0/kernel.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -292,6 +292,45 @@ and you can extend the class if you want to customize your own buttons.
         <p>kernel.css includes predefined color classes. These are great for prototyping your ideas quickly, but you may not want to pollute your dom with a bunch of color classes.</p>
 
         <hr class="ion-hr">
+        <h3>Tabs</h3>
+
+        <div class="ion-tabs">
+            <ul>
+                <li><a>Tab #1</a></li>
+                <li><a>Tab #2</a></li>
+                <li><a>Tab #3</a></li>
+            </ul>
+
+            <div class="ion-tab">
+                <p>Tab #1</p>
+            </div>
+
+            <div class="ion-tab">
+                <p>Tab #2</p>
+            </div>
+
+            <div class="ion-tab">
+                <p>Tab #3</p>
+            </div>
+        </div>
+
+        <pre class="ion-code ion-code-block prettyprint">
+<code>&lt;div class="ion-tabs"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a&gt;Test&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt;Test #2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="ion-tab"&gt;
+        &lt;p>test #1/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="ion-tab"&gt;
+        &lt;p&gt;test #2&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <hr class="ion-hr">
         <h3>Utils</h3>
 
         <p>kernel.css comes bundled with a few useful utility classes.</p>
@@ -502,7 +541,7 @@ Code block
 
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://ionogy.com/kernel.css/v0.4.1/kernel.js"></script>
+    <script src="https://ionogy.com/kernel.css/v0.5.0/kernel.js"></script>
     <script type="text/javascript">
         'use strict';
 
