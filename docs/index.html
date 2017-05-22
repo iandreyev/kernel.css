@@ -556,46 +556,47 @@ Code block
     </footer>
 
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://ionogy.com/kernel.css/v0.5.0/kernel.js"></script>
     <script type="text/javascript">
-        'use strict';
+        window.onload = function() {
+            'use strict';
 
-        /**
-         * Progressbar code
-         **/
+            /**
+             * Progressbar code
+             **/
 
-        var btnProgress = $('#btn-activate-progress');
-        var progress1 = $('#progress-ex1 .ion-progress');
+            var btnProgress = document.querySelector('#btn-activate-progress');
+            var progress1 = document.querySelector('#progress-ex1 .ion-progress');
 
-        var triggered = false;
-        var count = 0;
+            var triggered = false;
+            var count = 0;
 
-        btnProgress.click(function() {
-            triggered = true;
+            btnProgress.onclick = function() {
+                triggered = true;
 
-            (function progressLoop() {
-                progress1.css('width', count + '%');
+                (function progressLoop() {
+                    progress1.style.width = count + '%';
 
-                if (count <= 100) {
-                    count += 0.5;
+                    if (count <= 100) {
+                        count += 0.5;
+                    }
+
+                    requestAnimationFrame(progressLoop);
+                })();
+            };
+
+            /**
+            * Change header on scroll.
+            **/
+
+            window.onscroll = function() {
+                if (document.body.scrollTop > document.querySelector('.hero').clientHeight) {
+                    document.querySelector('header').classList.add('header-hover');
+                } else {
+                    document.querySelector('header').classList.remove('header-hover');
                 }
-
-                requestAnimationFrame(progressLoop);
-            })();
-        });
-
-        /**
-        * Change header on scroll.
-        **/
-
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > $('.hero').height()) {
-                $('header').addClass('header-hover');
-            } else {
-                $('header').removeClass('header-hover');
-            }
-        });
+            };
+        };
     </script>
 </body>
 
