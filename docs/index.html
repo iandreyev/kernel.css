@@ -564,43 +564,45 @@ Code block
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script src="https://ionogy.com/kernel.css/v0.5.0/kernel.js"></script>
     <script type="text/javascript">
-        'use strict';
+        (function() {
+            'use strict';
 
-        /**
-         * Progressbar code
-         **/
+            /**
+             * Progressbar.
+             **/
 
-        var btnProgress = document.querySelector('#btn-activate-progress');
-        var progress1 = document.querySelector('#progress-ex1 .ion-progress');
+            var btnProgress = document.querySelector('#btn-activate-progress');
+            var progress1 = document.querySelector('#progress-ex1 .ion-progress');
 
-        var triggered = false;
-        var count = 0;
+            var triggered = false;
 
-        btnProgress.onclick = function() {
-            triggered = true;
+            btnProgress.onclick = function() {
+                triggered = true;
+                var count = 0;
 
-            (function progressLoop() {
-                progress1.style.width = count + '%';
+                (function progressLoop() {
+                    progress1.style.width = count + '%';
 
-                if (count <= 100) {
-                    count += 0.5;
+                    if (count <= 100) {
+                        count += 0.5;
+                    }
+
+                    requestAnimationFrame(progressLoop);
+                })();
+            };
+
+            /**
+            * Change header on scroll.
+            **/
+
+            window.onscroll = function() {
+                if (document.body.scrollTop > document.querySelector('.hero').clientHeight) {
+                    document.querySelector('header').classList.add('header-hover');
+                } else {
+                    document.querySelector('header').classList.remove('header-hover');
                 }
-
-                requestAnimationFrame(progressLoop);
-            })();
-        };
-
-        /**
-        * Change header on scroll.
-        **/
-
-        window.onscroll = function() {
-            if (document.body.scrollTop > document.querySelector('.hero').clientHeight) {
-                document.querySelector('header').classList.add('header-hover');
-            } else {
-                document.querySelector('header').classList.remove('header-hover');
-            }
-        };
+            };
+        })();
     </script>
 </body>
 
