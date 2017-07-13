@@ -19,31 +19,55 @@ var kernel = kernel || {};
         return index;
     };
 
+    if (window.Element && !Element.prototype.closest) {
+        Element.prototype.closest = function(s) {
+            var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                i,
+                el = this;
+
+            do {
+                i = matches.length;
+                while (--i >= 0 && matches.item(i) !== el) {};
+            } while ((i < 0) && (el = el.parentElement));
+
+            return el;
+        };
+    }
+
     app.closeNotice = function(e) {
         var parent = e.currentTarget.parentNode;
         parent.remove();
     };
 
-    var navIsToggled = false;
-
     /**
-    * Toogle header navigation.
-    **/
+     * Toogle header navigation.
+     **/
 
     app.toggleNav = function(e) {
-        var navList = e.currentTarget.parentNode.querySelector('.ion-nav');
+        var header = e.currentTarget.closest('.ion-header');
 
-        navIsToggled = !navIsToggled;
-
-        if (navIsToggled) {
+        if (header.classList.toggle('ion-toggled')) {
             var navMobile = document.createElement('nav');
-            navMobile.innerHTML = navList.innerHTML;
-            navMobile.className = 'ion-nav-mobile';
-            navMobile.style['z-index'] = '1000';
+            navMobile.innerHTML = header.querySelector('.ion-nav').innerHTML;
+            navMobile.className = 'ion-header-mobile ion-fade-in';
+            navMobile.style['margin-top'] = header.offsetHeight + 'px';
 
-            document.body.appendChild(navMobile);
+            header.appendChild(navMobile);
+
+            function onMouseUp(e) {
+                if (
+                    e.target != navMobile &&
+                    e.target != header.querySelector('.nav-toggle') &&
+                    e.target != header.querySelector('.nav-toggle i')
+                ) {
+                    navMobile.remove();
+                    header.classList.remove('ion-toggled');
+                }
+            }
+
+            window.addEventListener('mouseup', onMouseUp);
         } else {
-            document.querySelector('.ion-nav-mobile').remove();
+            header.querySelector('.ion-header-mobile').remove();
         }
     };
 
