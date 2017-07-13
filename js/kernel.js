@@ -35,8 +35,7 @@ var kernel = kernel || {};
     }
 
     app.closeNotice = function(e) {
-        var parent = e.currentTarget.parentNode;
-        parent.remove();
+        e.currentTarget.closest('.ion-notice').remove();
     };
 
     /**
