@@ -117,8 +117,8 @@ var kernel = kernel || {};
     };
 
     /**
-    * Initializes dom elements.
-    **/
+     * Initializes dom elements.
+     **/
 
     app.initEvents = function() {
         var navToggle = document.querySelectorAll('.ion-header .nav-toggle');
