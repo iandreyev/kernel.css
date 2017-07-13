@@ -70,21 +70,18 @@ var kernel = kernel || {};
         }
     };
 
-    var sidebar = document.querySelector('.ion-sidebar');
-    var sidebarIsToggled = false;
-
     /**
-    * Toggle the sidebar.
-    **/
+     * Toggle the sidebar.
+     **/
 
-    app.toggleSidebar = function() {
-        if (sidebarIsToggled) {
+    app.toggleSidebar = function(e) {
+        var sidebar = e.currentTarget.closest(".ion-sidebar");
+
+        if (sidebar.classList.toggle("ion-active")) {
             sidebar.style.width = '60px';
         } else {
             sidebar.style.width = '220px';
         }
-
-        sidebarIsToggled = !sidebarIsToggled;
     };
 
     app.tabs = function(tab) {
