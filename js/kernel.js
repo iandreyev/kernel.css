@@ -77,10 +77,23 @@ var kernel = kernel || {};
     app.toggleSidebar = function(e) {
         var sidebar = e.currentTarget.closest(".ion-sidebar");
 
-        if (sidebar.classList.toggle("ion-active")) {
-            sidebar.style.width = '60px';
-        } else {
+        if (sidebar.classList.toggle('ion-active')) {
+            function onMouseUp(e) {
+                if (
+                    e.target != sidebar &&
+                    e.target != sidebar.querySelector('li:first-child') &&
+                    e.target != sidebar.querySelector('li:first-child i')
+                ) {
+                    sidebar.style.width = '60px';
+                    sidebar.classList.remove('ion-active');
+                }
+            }
+
+            window.addEventListener('mouseup', onMouseUp);
+
             sidebar.style.width = '220px';
+        } else {
+            sidebar.style.width = '60px';
         }
     };
 
