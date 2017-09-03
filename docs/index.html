@@ -52,10 +52,12 @@
                 <h3 class="block-spacing">Built for any kind of job</h3>
                 <p>Whether you're making a website, web app or a dashboard app, this framework got you covered!</p>
             </div>
+
             <div class="ion-col-1 feature">
                 <h3 class="block-spacing">Far from reaching it's potential</h3>
                 <p>If you like this project and would like to help out, you may do so on <a href="https://github.com/Ionogy/kernel.css" class="ion-anchor">github</a>. This project is ever improving.</p>
             </div>
+
             <div class="ion-col-1 feature">
                 <h3 class="block-spacing">Simple to use</h3>
                 <p>The Kernel Framework is designed for everyone from the beginner to the novience. It makes everybody's job easier.</p>
@@ -67,10 +69,12 @@
                 <h3 class="block-spacing">Lightweight</h3>
                 <p style="hyphens: auto;">We aim to make this a super lightweight, fully fledged framework that wont slow down your website's loading times.</p>
             </div>
+
             <div class="ion-col-1 feature">
                 <h3 class="block-spacing">A solid foundation for your project</h3>
                 <p>The Kernel Framework does not aim to do all the work for you by any means, it is meant to be a generic foundation that can be used for any type of project.</p>
             </div class="block-spacing">
+
             <div class="ion-col-1 feature">
                 <h3>Compatible with other frameworks</h3>
                 <p>Because kernel.css uses prefixes for all it's css classes (<code class="ion-code">ion-</code>), it can be used with most other CSS framework. Mix and match
@@ -172,6 +176,49 @@
             </div>
             <div class="ion-col-14 grid-example-item">
                 <p>col-14</p>
+            </div>
+        </div>
+
+        <hr class="ion-hr">
+        <h3>Nav</h3>
+
+        <p>The nav class is a simple way to make navigation menus. They are usually accompanied by a header (read the section about headers).</p>
+
+        <nav class="ion-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <hr class="ion-hr">
+        <h3>Header</h3>
+
+        <p>On small screen devices, the navigation gets hidden in a drawer that can be toggled by pressing the nav toggle button (hamburger icon).</p>
+
+        <div class="ion-header ion-header-sm" style="position: static;">
+            <button class="nav-toggle">
+                <i class="material-icons">menu</i>
+            </button>
+
+            <div class="ion-container">
+                <nav class="ion-nav">
+                    <ul>
+                        <li class="ion-nav-active-state">
+                            <a href="/kernel.css">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Ionogy/kernel.css/releases">Downloads</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Ionogy/kernel.css/blob/master/README.md">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ionogy/kernel.css"><img class="github-icon" src="GitHub-Mark.png" alt="GitHub"> GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
@@ -345,12 +392,22 @@ and you can extend the class if you want to customize your own buttons.
             <a href="#" class="ion-label ion-warning">Label Warning</a>
             <a href="#" class="ion-label ion-alert">Label</a>
 
+            <pre class="ion-code ion-code-block prettyprint">
+<code>&lt;a class="ion-label" href="#"&gt;Label&lt;a&gt;
+&lt;a class="ion-label ion-safe" href="#"&gt;Label&lt;a&gt;
+&lt;a class="ion-label ion-info" href="#"&gt;Label&lt;a&gt;
+&lt;a class="ion-label ion-warning" href="#"&gt;Label&lt;a&gt;
+&lt;a class="ion-label ion-alert" href="#"&gt;Label&lt;a&gt;</code></pre>
+
             <hr class="ion-hr">
             <h2>Tags</h2>
 
             <a class="ion-tag" href="#">Biceps</a>
-            <a class="ion-tag" href="#">Biceps</a>
-            <a class="ion-tag" href="#">Biceps</a>
+            <a class="ion-tag" href="#">Triceps</a>
+            <a class="ion-tag" href="#">Quads</a>
+
+            <pre class="ion-code ion-code-block prettyprint">
+<code>&lt;a class="ion-tag" href="#"&gt;Biceps&lt;a&gt;</code></pre>
 
         <hr class="ion-hr">
         <h3>Utils</h3>
@@ -373,7 +430,7 @@ Removes all shadows from an element.
 
 &lt;!-- Vertical-center --&gt;
 Vertically center an element.
-&lt;div class="ion-vertical-center"&gt;&lt;/div&gt;
+&lt;div class="ion-vertical-center"&gt;...&lt;/div&gt;
 
 &lt;!-- Center (horizontal) --&gt;
 Center an element horizontally.
@@ -387,7 +444,13 @@ Make an element circular.
 &lt;hr class="ion-hr"&gt;
 
 &lt;!-- Display only on small screen sizes -->
-&lt;div class="ion-visible-sm"&gt;...&lt;/div&gt;</code></pre>
+&lt;div class="ion-visible-sm"&gt;...&lt;/div&gt;
+
+&lt;!-- Display only on large screen sizes -->
+&lt;div class="ion-visible-lg"&gt;...&lt;/div&gt;
+
+&lt;!-- Autowrap a piece of text --&gt;
+&lt;p class="ion-autowrap"&gt;...&lt;/p&gt;</code></pre>
 
         <hr class="ion-hr">
         <h3>Tables</h3>
@@ -454,6 +517,8 @@ Make an element circular.
 
         <hr class="ion-hr">
         <h3>Cards</h3>
+
+        <p>Card are a popular way to section content, and creates a contrast from the background page.</p>
 
         <div class="ion-grid">
             <div class="ion-col-1">
