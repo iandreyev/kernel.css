@@ -22,6 +22,29 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+
+            &:hover {
+                .ion-dropdown {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .ion-dropdown {
+        background: header.bg;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+        position: absolute;
+
+        ul {
+            li {
+                display: block;
+            }
+
+            li:not(:last-of-type) {
+                border-bottom: 1px solid nav.border-color;
+            }
         }
     }
 }

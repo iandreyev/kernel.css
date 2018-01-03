@@ -51,7 +51,7 @@
     }
 
     .ion-nav {
-        ul li:hover {
+       > ul > li:hover {
             border-bottom: 3px solid header.border-color;
         }
     }
@@ -127,6 +127,12 @@
             a:hover {
                 background: nav.mobile-hover-bg;
             }
+        }
+    }
+
+    .ion-dropdown {
+        ul li {
+            padding-left: 25px;
         }
     }
 }
